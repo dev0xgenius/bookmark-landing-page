@@ -1,14 +1,137 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
   <meta http-equiv="X-UA-Compatible" content="IE=7,8,edge" />
   <meta charset="UTF-8">
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
+  <link rel="stylesheet" type="text/css" href="/scss/styles.scss" />
   <title>Frontend Mentor | Bookmark landing page</title>
 </head>
+
 <body>
-  <h1>God did</h1>
+  <div class="wrapper">
+    <header>
+      <div class="wrapper">
+        <div class="logo">
+          <span><img src="/assets/images/logo-bookmark.svg" alt="logo bookmark" /></span>
+        </div>
+        <div class="menu">
+          <div class="menu-icon">
+            <span><img src="/assets/images/icon-hamburger.svg" alt="hamburger icon" /></span>
+          </div>
+          <nav style="display: none;">
+            <header>
+              <span><img src="/assets/images/logo-bookmark.svg" alt="logo bookmark" /></span>
+              <button><img src="/assets/images/icon-close.svg" alt="close icon for closing menu" /></button>
+            </header>
+            <main>
+              <a href="#features">Features</a>
+              <a href="#pricing">Pricing</a>
+              <a href="#contact">Contact</a>
+              <a href="#login">Login</a>
+            </main>
+          </nav>
+        </div>
+      </div>
+    </header>
+    <main>
+      <section class="hero">
+        <div class="wrapper">
+          <div class="illustration">
+            <span><img src="/assets/images/illustration-hero.svg" 
+              alt="illustration" /></span>
+          </div>
+          <div class="content">
+            <div class="main">
+              <h1>A Simple Bookmark Manager</h1>
+              <p>
+                A clean and simple interface to organize your favourite websites. 
+                Open a new browser tab and see your sites load instantly. Try it for free.
+              </p>
+            </div>
+            <div class="links">
+              <a href='#'>Get it on Chrome</a>
+              <a href='#'>Get it on Firefox</a>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="features" id="features">
+        <div class="wrapper">
+          <div class="content">
+            <div class="main">
+              <h1>Features</h1>
+              <p>
+                Our aim is to make it quick and easy for you to access your favourite websites. 
+                Your bookmarks sync between your devices so you can access them on the go.
+              </p>
+            </div>
+            <div class="features-tab">
+              <nav>
+                <a href="#">Simple Bookmarking</a>
+                <a href="#">Speedy Searching</a>
+                <a href="#">Easy Sharing</a>
+              </nav>
+              <ul class="tabs">
+                <li>
+                  <div class="illustration">
+                    <span>
+                      <img src="/assets/images/illustration-features-tab-1.svg" alt="" />
+                    </span>
+                  </div>
+                  <div class="content">
+                    <h1>Bookmark in one click</h1>
+                    <p>
+                      Organize your bookmarks however you like. Our simple drag-and-drop interface 
+                      gives you complete control over how you manage your favourite sites.
+                    </p>
+                  </div>
+                  <a href="#" style="display: none;">More Info</a>
+                </li>
+                <li>
+                  <div class="illustration">
+                    <span>
+                      <img src="/assets/images/illustration-features-tab-2.svg" alt="" />
+                    </span>
+                  </div>
+                  <div class="content">
+                    <h1>Intelligent search</h1>
+                    <p>
+                      Our powerful search feature will help you find saved sites in no time at all. 
+                      No need to trawl through all of your bookmarks.
+                    </p>
+                  </div>
+                  <a href="#" style="display: none;">More Info</a>
+                </li>
+                <li>
+                  <div class="illustration">
+                    <span>
+                      <img src="/assets/images/illustration-features-tab-3.svg" alt="" />
+                    </span>
+                  </div>
+                  <div class="content">
+                    <h1>Share your bookmarks</h1>
+                    <p>
+                      Easily share your bookmarks and collections with others. Create a shareable 
+                      link that you can send at the click of a button.
+                    </p>
+                  </div>
+                  <a href="#" style="display: none;">More Info</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="extensions"></section>
+      <section class="faqs"></section>
+      <section class="call-to-action"></section>
+    </main>
+    <footer></footer>
+  </div>
 </body>
+
 </html>
