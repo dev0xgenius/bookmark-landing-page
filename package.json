@@ -1,0 +1,34 @@
+{
+  "name": "bookmark-landing-page",
+  "version": "1.0.0",
+  "description": "Bookmark Landing Page",
+  "main": "index.html",
+  "scripts": {
+    "dev" : "vite",
+    "build" : "vite build",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/dev0xgenius/bookmark-landing-page.git"
+  },
+  "keywords": [
+    "bookmark",
+    "landing",
+    "page"
+  ],
+  "author": "0xgenius",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dev0xgenius/bookmark-landing-page/issues"
+  },
+  "homepage": "https://github.com/dev0xgenius/bookmark-landing-page#readme",
+  "devDependencies": {
+    "nodemon": "^3.1.7",
+    "sass": "^1.81.0",
+    "vite": "^6.0.1"
+  },
+  "dependencies": {
+    "bootstrap": "^5.3.3"
+  }
+}
