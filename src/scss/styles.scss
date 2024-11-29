@@ -1,2 +1,7 @@
 @import "base/config";
 @import "page-sections/header";
+
+body {
+  min-height: 100vh;
+  .wrapper { max-width: 375px; }
+}
