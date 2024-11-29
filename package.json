@@ -2,10 +2,10 @@
   "name": "bookmark-landing-page",
   "version": "1.0.0",
   "description": "Bookmark Landing Page",
-  "main": "index.html",
+  "main": "src/index.html",
   "scripts": {
-    "start" : "vite",
-    "build" : "vite build",
+    "start": "vite",
+    "build": "vite build",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
