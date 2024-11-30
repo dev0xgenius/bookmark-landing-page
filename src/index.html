@@ -12,9 +12,9 @@
 </head>
 
 <body class="d-flex flex-column align-items-center">
-  <div class="wrapper w-100 d-flex flex-column gap-4 
-    py-16 border border-1">
-    <header class="main px-5">
+  <div class="wrapper w-100 d-flex flex-column gap-16 
+    py-8 border border-1">
+    <header class="main px-8">
       <div class="wrapper d-flex justify-content-between align-items-center">
         <div class="logo">
           <span>
@@ -41,16 +41,17 @@
         </div>
       </div>
     </header>
-    <main class="d-flex flex-column gap-4">
-      <section class="hero">
-        <div class="wrapper row gap-2 flex-column align-items-center">
-          <div class="illustration col">
+    <main class="d-flex flex-column gap-32">
+      <section class="hero container">
+        <div class="wrapper row row-cols-1 gap-8 m-0">
+          <div class="illustration position-relative col">
             <span>
               <img src="./assets/images/illustration-hero.svg" 
-              alt="illustration" />
+                alt="illustration" />
             </span>
+            <span class="curved-block bottom-0 end-0"></span>
           </div>
-          <div class="content col">
+          <div class="content px-8 col">
             <div class="text">
               <h1>A Simple Bookmark Manager</h1>
               <p>
@@ -58,9 +59,9 @@
                 Open a new browser tab and see your sites load instantly. Try it for free.
               </p>
             </div>
-            <div class="links">
-              <a href='#'>Get it on Chrome</a>
-              <a href='#'>Get it on Firefox</a>
+            <div class="links w-100 d-flex gap-4 text-center justify-content-center">
+              <a href='#' class="link-btn">Get it on Chrome</a>
+              <a href='#' class="link-btn bg-secondary bg-opacity-10 text-dark">Get it on Firefox</a>
             </div>
           </div>
         </div>
@@ -285,7 +286,7 @@
         </div>
       </section>
     </main>
-    <section class="call-to-action">
+    <section class="call-to-action px-6">
       <div class="wrapper">
         <div class="content">
           <h4>35,000+ already joined</h4>
@@ -297,7 +298,7 @@
         </form>
       </div>
     </section>
-    <footer>
+    <footer class="px-6">
       <div class="wrapper">
         <header>
           <span>

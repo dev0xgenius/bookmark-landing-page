@@ -3,13 +3,12 @@
 $primary: hsl(231, 69%, 60%);
 $danger: hsl(0, 94%, 66%);
 $secondary: hsl(229, 8%, 60%);
-$darkBlue: hsl(229, 31%, 21%);
-$spacer: 1rem;
+$dark: hsl(229, 31%, 21%);
 
 @import "../../../node_modules/bootstrap/scss/variables";
 @import "../../../node_modules/bootstrap/scss/variables-dark";
 
-$range: (1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 12, 14, 16, 18, 20, 24, 28, 32);
+$range: (0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 12, 14, 16, 18, 20, 24, 28, 32);
 $custom-spacers: ();
 $space-diff: .25;
 
@@ -43,8 +42,8 @@ $spacers: map-merge($spacers, $custom-spacers);
 	margin: 0;
 	padding: 0;
 	font-size: 100%;
-	font-family: Rubik, system-ui;
 	list-style-type: none;
+	text-decoration: none;
 	box-sizing: border-box;
 }
 
