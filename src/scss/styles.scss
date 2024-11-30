@@ -5,3 +5,11 @@ body {
   min-height: 100vh;
   .wrapper { max-width: 375px; }
 }
+
+.content {
+  @include flex;
+  .text {
+    @include flex;
+    p { text-align: center; }
+  }
+}

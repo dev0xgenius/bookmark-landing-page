@@ -12,23 +12,24 @@
 </head>
 
 <body class="d-flex flex-column align-items-center">
-  <div class="wrapper w-100 d-flex flex-column gap-4 border border-1">
-    <header class="main px-4">
+  <div class="wrapper w-100 d-flex flex-column gap-4 
+    py-16 border border-1">
+    <header class="main px-5">
       <div class="wrapper d-flex justify-content-between align-items-center">
         <div class="logo">
           <span>
-            <img src="./assets/images/logo-bookmark.svg" 
+            <img src="/assets/images/logo-bookmark.svg" 
             alt="logo bookmark" />
           </span>
         </div>
         <div class="menu">
           <div class="menu-icon">
-            <span><img src="./assets/images/icon-hamburger.svg" alt="hamburger icon" /></span>
+            <span><img src="/assets/images/icon-hamburger.svg" alt="hamburger icon" /></span>
           </div>
-          <nav style="display: none;">
+          <nav class="d-none">
             <header>
-              <span><img src="./assets/images/logo-bookmark.svg" alt="logo bookmark" /></span>
-              <button><img src="./assets/images/icon-close.svg" alt="close icon for closing menu" /></button>
+              <span><img src="/assets/images/logo-bookmark.svg" alt="logo bookmark" /></span>
+              <button><img src="/assets/images/icon-close.svg" alt="close icon for closing menu" /></button>
             </header>
             <main>
               <a href="#features">Features</a>
@@ -42,15 +43,15 @@
     </header>
     <main class="d-flex flex-column gap-4">
       <section class="hero">
-        <div class="wrapper">
-          <div class="illustration">
+        <div class="wrapper row gap-2 flex-column align-items-center">
+          <div class="illustration col">
             <span>
               <img src="./assets/images/illustration-hero.svg" 
               alt="illustration" />
             </span>
           </div>
-          <div class="content">
-            <div class="main">
+          <div class="content col">
+            <div class="text">
               <h1>A Simple Bookmark Manager</h1>
               <p>
                 A clean and simple interface to organize your favourite websites. 
@@ -67,7 +68,7 @@
       <section class="features" id="features">
         <div class="wrapper">
           <div class="content">
-            <div class="main">
+            <div class="text">
               <h1>Features</h1>
               <p>
                 Our aim is to make it quick and easy for you to access your favourite websites. 

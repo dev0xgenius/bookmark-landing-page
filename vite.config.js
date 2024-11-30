@@ -1,12 +1,7 @@
-const path = require('path');
+const path = require("path");
 
 export default {
-  root: path.resolve(__dirname, './src'),
-  build: {
-    outDir: '../dist'
-  },
-  server: {
-    port: 5173,
-    hot: true
-  }
+  root: path.resolve(__dirname, "./src"),
+  build: "./dist",
+  server: { hot: true }
 }
