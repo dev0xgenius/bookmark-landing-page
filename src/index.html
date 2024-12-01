@@ -60,7 +60,7 @@
                 Open a new browser tab and see your sites load instantly. Try it for free.
               </p>
             </div>
-            <div class="links w-100 d-flex gap-4 text-center justify-content-center">
+            <div class="links w-100 d-flex gap-4 justify-content-center">
               <a href='#' class="link-btn">Get it on Chrome</a>
               <a href='#' class="link-btn bg-secondary bg-opacity-10 text-dark">Get it on Firefox</a>
             </div>
@@ -154,71 +154,79 @@
           <!-- </div> -->
         </div>
       </section>
-      <section class="extensions">
-        <div class="wrapper">
-          <section class="content">
-            <h1>Download the extension</h1>
-            <p>
-              We’ve got more browsers in the pipeline. Please do let us know if you’ve 
-              got a favourite you’d like us to prioritize.
-            </p>
-          </section>
-          <ul class="extensions">
-            <li class="extension">
+      <section class="extensions px-8">
+        <div class="wrapper d-flex flex-column gap-16">
+          <div class="content">
+            <div class="text">
+              <h2>Download the extension</h2>
+              <p>
+                We’ve got more browsers in the pipeline. Please do let us know if you’ve 
+                got a favourite you’d like us to prioritize.
+              </p>
+            </div>
+          </div>
+          <ul class="extensions row gap-12 px-2">
+            <li class="extension-card">
               <div class="wrapper">
                 <main>
                   <span>
                     <img src="./assets/images/logo-chrome.svg" 
-                    alt="chrome browser logo" />
+                      alt="chrome browser logo" />
                   </span>
-                  <section class="content">
-                    <h2>Add to Chrome</h2>
+                  <div class="text">
+                    <h3>Add to Chrome</h3>
                     <p>Minimum version 62</p>
-                  </section>
+                  </div>
                 </main>
                 <span>
                   <img src="./assets/images/bg-dots.svg" 
                   alt="dots image for page division" />
                 </span>
-                <a href="#">Add & Install Extension</a>
+                <span>  
+                  <a href="#" class="link-btn">Add & Install Extension</a>
+                </span>
               </div>
             </li>
-            <li class="extension">
+            <li class="extension-card">
               <div class="wrapper">
                 <main>
                   <span>
                     <img src="./assets/images/logo-firefox.svg" 
                     alt="firefox browser logo" />
                   </span>
-                  <section class="content">
-                    <h2>Add to Firefox</h2>
+                  <div class="text">
+                    <h3>Add to Firefox</h3>
                     <p>Minimum version 55</p>
-                  </section>
+                  </div>
                 </main>
                 <span>
                   <img src="./assets/images/bg-dots.svg" 
                   alt="dots image for page division" />
                 </span>
-                <a href="#">Add & Install Extension</a>
+                <span>
+                  <a href="#" class="link-btn">Add & Install Extension</a>
+                </span>
               </div>
             </li>
-            <li class="extension">
+            <li class="extension-card">
               <div class="wrapper">
                 <main>
                   <span>
                     <img src="./assets/images/logo-opera.svg" 
                     alt="Opera browser logo" />
                   </span>
-                  <section class="content">
-                    <h2>Add to Opera</h2>
+                  <div class="text">
+                    <h3>Add to Opera</h3>
                     <p>Minimum version 46</p>
-                  </section>
+                  </div>
                 </main>
                 <span>
                   <img src="./assets/images/bg-dots.svg" 
                   alt="dots image for page division" />
                 </span>
-                <a href="#">Add & Install Extension</a>
+                <span>
+                  <a href="#" class="link-btn">Add & Install Extension</a>
+                </span>
               </div>
             </li>
           </ul>
@@ -307,7 +315,7 @@
         </div>
       </section>
     </main>
-    <section class="call-to-action px-6">
+    <section class="call-to-action px-8">
       <div class="wrapper">
         <div class="content">
           <h4>35,000+ already joined</h4>
@@ -319,7 +327,7 @@
         </form>
       </div>
     </section>
-    <footer class="px-6">
+    <footer class="px-8">
       <div class="wrapper">
         <header>
           <span>
@@ -346,26 +354,3 @@
 </body>
 
 </html>
-
-<!-- <ul class="nav nav-tabs" id="myTab" role="tablist">
-  <li class="nav-item" role="presentation">
-    <button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home" type="button" role="tab" aria-controls="home" aria-selected="true">Home</button>
-  </li>
-  <li class="nav-item" role="presentation">
-    <button class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile" type="button" role="tab" aria-controls="profile" aria-selected="false">Profile</button>
-  </li>
-  <li class="nav-item" role="presentation">
-    <button class="nav-link" id="messages-tab" data-bs-toggle="tab" data-bs-target="#messages" type="button" role="tab" aria-controls="messages" aria-selected="false">Messages</button>
-  </li>
-  <li class="nav-item" role="presentation">
-    <button class="nav-link" id="settings-tab" data-bs-toggle="tab" data-bs-target="#settings" type="button" role="tab" aria-controls="settings" aria-selected="false">Settings</button>
-  </li>
-</ul> -->
-
-<!-- Tab panes -->
-<!-- <div class="tab-content">
-  <div class="tab-pane active" id="home" role="tabpanel" aria-labelledby="home-tab" tabindex="0">...</div>
-  <div class="tab-pane" id="profile" role="tabpanel" aria-labelledby="profile-tab" tabindex="0">...</div>
-  <div class="tab-pane" id="messages" role="tabpanel" aria-labelledby="messages-tab" tabindex="0">...</div>
-  <div class="tab-pane" id="settings" role="tabpanel" aria-labelledby="settings-tab" tabindex="0">...</div>
-</div> -->

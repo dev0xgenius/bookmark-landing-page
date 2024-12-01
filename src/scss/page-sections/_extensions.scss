@@ -1,0 +1,36 @@
+section.extensions {
+  .extension-card {
+    padding: 3rem 0;
+    padding-bottom: 1.5rem;
+    box-shadow: $box-shadow;
+    border-radius: $border-radius-xl;
+    background-color: $light;
+    
+    &>.wrapper {
+      @include flex;
+      
+      &>span {
+        display: inline-block;
+        width: 100%;
+        
+        &:last-child {
+          a { width: 100%; }
+          padding: 0 1.5rem; 
+        }
+      }
+      
+    }
+    
+    main {
+      @include flex($g: 2rem);
+
+      .text {
+        @include flex($g: .25rem);
+        color: $dark;
+        
+        h3 { font-size: $h3-font-size; }
+        p { color: $secondary; }
+      }
+    }
+  }
+}
