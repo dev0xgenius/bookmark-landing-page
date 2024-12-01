@@ -9,6 +9,7 @@
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   <link rel="stylesheet" type="text/css" href="/scss/styles.scss" />
   <title>Frontend Mentor | Bookmark landing page</title>
+  <script defer type="module" src="/js/index.js"></script>
 </head>
 
 <body class="d-flex flex-column align-items-center">
@@ -42,14 +43,14 @@
       </div>
     </header>
     <main class="d-flex flex-column gap-32">
-      <section class="hero container">
+      <section class="hero container px-0">
         <div class="wrapper row row-cols-1 gap-8 m-0">
           <div class="illustration position-relative col">
             <span>
               <img src="./assets/images/illustration-hero.svg" 
                 alt="illustration" />
             </span>
-            <span class="curved-block bottom-0 end-0"></span>
+            <span class="curved-block end-0"></span>
           </div>
           <div class="content px-8 col">
             <div class="text">
@@ -66,71 +67,91 @@
           </div>
         </div>
       </section>
-      <section class="features" id="features">
-        <div class="wrapper">
-          <div class="content">
-            <div class="text">
-              <h1>Features</h1>
+      <section class="features container" id="features">
+        <!-- <div class="wrapper"> -->
+          <div class="content container row row-cols-1">
+            <div class="text px-8 col">
+              <h2>Features</h2>
               <p>
                 Our aim is to make it quick and easy for you to access your favourite websites. 
                 Your bookmarks sync between your devices so you can access them on the go.
               </p>
             </div>
-            <div class="features-tab">
-              <nav>
-                <a href="#">Simple Bookmarking</a>
-                <a href="#">Speedy Searching</a>
-                <a href="#">Easy Sharing</a>
-              </nav>
-              <ul class="tabs">
-                <li>
+            <div class="features-tab row row-cols-1 gap-8 col" role="navigation">
+              <div class="px-8 col">
+                <nav class="nav nav-tabs gap-0 flex-column" id="features-tab">
+                  <button class="nav-link active" id="first-tab" data-bs-toggle="tab" 
+                    data-bs-target="#first" type="button" role="tab" aria-controls="tab 1" 
+                    aria-selected="true">Simple Bookmarking</button>
+                    
+                  <button class="nav-link" id="second-tab" data-bs-toggle="tab" 
+                    data-bs-target="#second" type="button" role="tab" aria-controls="tab 2" 
+                    aria-selected="false">Speedy Searching</button>
+                    
+                  <button class="nav-link" id="third-tab" data-bs-toggle="tab" 
+                    data-bs-target="#third" type="button" role="tab" aria-controls="tab 3" 
+                    aria-selected="false">Easy Sharing</button>
+                </nav>
+              </div>
+              <ul class="tab-content col">
+                <li class="tab-pane active" id="first" role="tabpanel" 
+                  aria-labelledby="first-tab" tabindex="0">
                   <div class="illustration">
                     <span>
                       <img src="/assets/images/illustration-features-tab-1.svg" alt="" />
                     </span>
+                    <span class="curved-block left start-0 bottom-0"></span>
                   </div>
                   <div class="content">
-                    <h1>Bookmark in one click</h1>
-                    <p>
-                      Organize your bookmarks however you like. Our simple drag-and-drop interface 
-                      gives you complete control over how you manage your favourite sites.
-                    </p>
+                    <div class="text">
+                      <h2>Bookmark in one click</h2>
+                      <p>
+                        Organize your bookmarks however you like. Our simple drag-and-drop interface 
+                        gives you complete control over how you manage your favourite sites.
+                      </p>
+                    </div>
+                    <a href="#" class="d-none link-btn">More Info</a>
                   </div>
-                  <a href="#" style="display: none;">More Info</a>
                 </li>
-                <li>
+                <li class="tab-pane" id="second" role="tabpanel" aria-labelledby="second-tab" tabindex="0">
                   <div class="illustration">
                     <span>
                       <img src="./assets/images/illustration-features-tab-2.svg" alt="" />
                     </span>
+                    <span class="curved-block left start-0 bottom-0"></span>
                   </div>
                   <div class="content">
-                    <h1>Intelligent search</h1>
-                    <p>
-                      Our powerful search feature will help you find saved sites in no time at all. 
-                      No need to trawl through all of your bookmarks.
-                    </p>
+                    <div class="text">
+                      <h2>Intelligent search</h2>
+                      <p>
+                        Our powerful search feature will help you find saved sites in no time at all. 
+                        No need to trawl through all of your bookmarks.
+                      </p>
+                      <a href="#" class="d-none">More Info</a>
+                    </div>
                   </div>
-                  <a href="#" style="display: none;">More Info</a>
                 </li>
-                <li>
+                <li class="tab-pane" id="third" role="tabpanel" aria-labelledby="third-tab" tabindex="0">
                   <div class="illustration">
                     <span>
                       <img src="./assets/images/illustration-features-tab-3.svg" alt="" />
                     </span>
+                    <span class="curved-block left start-0 bottom-0"></span>
                   </div>
                   <div class="content">
-                    <h1>Share your bookmarks</h1>
-                    <p>
-                      Easily share your bookmarks and collections with others. Create a shareable 
-                      link that you can send at the click of a button.
-                    </p>
+                    <div class="text">
+                      <h2>Share your bookmarks</h2>
+                      <p>
+                        Easily share your bookmarks and collections with others. Create a shareable 
+                        link that you can send at the click of a button.
+                      </p>
+                    </div>
+                    <a href="#" style="display: none;">More Info</a>
                   </div>
-                  <a href="#" style="display: none;">More Info</a>
                 </li>
               </ul>
             </div>
-          </div>
+          <!-- </div> -->
         </div>
       </section>
       <section class="extensions">
@@ -325,3 +346,26 @@
 </body>
 
 </html>
+
+<!-- <ul class="nav nav-tabs" id="myTab" role="tablist">
+  <li class="nav-item" role="presentation">
+    <button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home" type="button" role="tab" aria-controls="home" aria-selected="true">Home</button>
+  </li>
+  <li class="nav-item" role="presentation">
+    <button class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile" type="button" role="tab" aria-controls="profile" aria-selected="false">Profile</button>
+  </li>
+  <li class="nav-item" role="presentation">
+    <button class="nav-link" id="messages-tab" data-bs-toggle="tab" data-bs-target="#messages" type="button" role="tab" aria-controls="messages" aria-selected="false">Messages</button>
+  </li>
+  <li class="nav-item" role="presentation">
+    <button class="nav-link" id="settings-tab" data-bs-toggle="tab" data-bs-target="#settings" type="button" role="tab" aria-controls="settings" aria-selected="false">Settings</button>
+  </li>
+</ul> -->
+
+<!-- Tab panes -->
+<!-- <div class="tab-content">
+  <div class="tab-pane active" id="home" role="tabpanel" aria-labelledby="home-tab" tabindex="0">...</div>
+  <div class="tab-pane" id="profile" role="tabpanel" aria-labelledby="profile-tab" tabindex="0">...</div>
+  <div class="tab-pane" id="messages" role="tabpanel" aria-labelledby="messages-tab" tabindex="0">...</div>
+  <div class="tab-pane" id="settings" role="tabpanel" aria-labelledby="settings-tab" tabindex="0">...</div>
+</div> -->

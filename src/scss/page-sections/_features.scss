@@ -1,0 +1,66 @@
+section.features {
+  nav {
+    text-align: center;
+    border-style: solid;
+    border-color: $secondary;
+    border-width: 1px 0px 1px 0;
+    
+    button {
+      position: relative;
+      padding: 1rem;
+      padding-bottom: 0.75rem;
+      color: $secondary;
+      border: none;
+      border-radius: 0px;
+      
+      &.active {
+        color: $dark; 
+        font-weight: 500;
+        border-radius: 0px;
+        z-index: -1;
+        border: none;
+      }
+      
+      &.active::after {
+        position: absolute;
+        content: "";
+        width: 40%;
+        height: auto;
+        margin: 0 auto;
+        padding: .125rem;
+        bottom: 0; left: 0;
+        right: 0;
+        border-radius: .25rem;
+        background-color: $danger;
+      }
+    }
+    
+    button:nth-child(2) {
+      border: 1px solid $secondary;
+      border-width: 1px 0px 1px 0;
+      
+      &.active {
+        border: 1px solid $secondary;
+        border-width: 1px 0px 1px 0;
+      }
+    }
+  }
+  
+  .tab-content {
+    .tab-pane {
+      &.active {
+        @include flex($g: 2rem);
+      }
+      
+      .illustration {
+        position: relative;
+        padding: 2rem;
+      }
+      
+      .content {
+        padding: 0 2rem;
+      }
+      
+    }
+  }
+}

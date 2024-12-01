@@ -5,17 +5,40 @@ $danger: hsl(0, 94%, 66%);
 $secondary: hsl(229, 8%, 60%);
 $dark: hsl(229, 31%, 21%);
 
+/* $enable-grid-classes: false; */
+
 @import "../../../node_modules/bootstrap/scss/variables";
 @import "../../../node_modules/bootstrap/scss/variables-dark";
 
-$range: (0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 12, 14, 16, 18, 20, 24, 28, 32);
-$custom-spacers: ();
+$range: (
+  0,
+  1,
+  2,
+  3,
+  4,
+  5,
+  6,
+  7,
+  8,
+  9,
+  10,
+  12,
+  14,
+  16,
+  18,
+  20,
+  24,
+  28,
+  32
+);
+$custom-spacers: (
+);
 $space-diff: .25;
 
+
 @each $num in $range {
-  $custom-spacers: map-merge($custom-spacers, 
-    (#{$num}: $spacer * ($num * $space-diff))
-  );
+  $custom-spacers: map-merge($custom-spacers,
+    (#{$num}: $spacer * ($num * $space-diff)));
 }
 
 $spacers: map-merge($spacers, $custom-spacers);
@@ -26,28 +49,41 @@ $spacers: map-merge($spacers, $custom-spacers);
 
 @import "../../../node_modules/bootstrap/scss/grid";
 @import "../../../node_modules/bootstrap/scss/utilities";
+@import "../../../node_modules/bootstrap/scss/nav";
+
 @import "../../../node_modules/bootstrap/scss/utilities/api";
 
 @mixin flex($dir: column, $align: center, $justify: center, $g: 1rem) {
-	display: flex;
-	flex-direction: $dir;
-	align-items: $align;
-	justify-content: $justify;
-	gap: $g;
+  display: flex;
+  flex-direction: $dir;
+  align-items: $align;
+  justify-content: $justify;
+  gap: $g;
 }
 
 *,
 *::before,
 *::after {
-	margin: 0;
-	padding: 0;
-	font-size: 100%;
-	list-style-type: none;
-	text-decoration: none;
-	box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-size: 100%;
+  list-style-type: none;
+  text-decoration: none;
+  box-sizing: border-box;
 }
 
 img {
-	width: 100%;
-	height: auto;
+  width: 100%;
+  height: auto;
+}
+
+
+.row {
+  padding: 0;
+  margin: 0;
+  
+  &>* {
+    padding: 0;
+    margin: 0;
+  }
 }

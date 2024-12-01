@@ -1,5 +1,4 @@
 @import "base/config";
-@import "page-sections/header";
 
 body {
   min-height: 100vh;
@@ -13,32 +12,50 @@ body {
   }
 }
 
-section>.wrapper {
-  width: 100%;
+main>section {
+  /* padding: 0 2rem; */
+  
+  &>.wrapper {
+    width: 100%;
+  }
 }
 
 .content {
   @include flex($g: 2rem);
-
+  
   .text {
-    @include flex;
+    @include flex($g: .75rem);
     text-align: center;
     color: $secondary;
-
+    
+    h1,
+    h2,
+    h3 {
+      color: $dark;
+    }
+    
     h1 {
       font-size: 2rem;
-      color: $dark;
+    }
+    
+    h2 {
+      font-size: 1.5rem;
     }
   }
 }
 
 .curved-block {
   position: absolute;
-  width: 80%;
-  height: 75%;
+  width: 80%; height: 75%;
+  bottom: 0;
   background-color: $primary;
   border-bottom-left-radius: 5rem;
   z-index: -2;
+  
+  &.left {
+    border-radius: 0;
+    border-bottom-right-radius: 5rem;
+  }
 }
 
 .illustration {
@@ -55,3 +72,5 @@ section>.wrapper {
   background-color: $primary;
   box-shadow: 0px .5rem .75rem lightgrey;
 }
+
+@import "page-sections/features";
