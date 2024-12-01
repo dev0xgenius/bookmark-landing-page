@@ -6,6 +6,24 @@ $secondary: hsl(229, 8%, 60%);
 $dark: hsl(229, 31%, 21%);
 $light: white;
 
+/* $accordion-button-icon: url("../../assets/images/icon-arrow.svg"); */
+$accordion-button-padding-x: 0rem;
+$accordion-button-padding-y: 1.5rem;
+$accordion-button-active-bg: transparent;
+
+$accordion-button-color: $dark;
+$accordion-button-active-color: $danger;
+$accordion-button-focus-border-color: none;
+$accordion-button-focus-box-shadow: none;
+
+//$accordion-icon-width: 2rem;
+
+$accordion-icon-color: $primary;
+$accordion-icon-active-color: $danger;
+$accordion-button-icon: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="18" height="12"><path fill="none" stroke="#5267DF" stroke-width="3" d="M1 1l8 8 8-8"/></svg>');
+$accordion-button-active-icon: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="18" height="12"><path fill="none" stroke="#{$accordion-icon-active-color}" stroke-width="3" d="M1 1l8 8 8-8"/></svg>');
+
+$accordion-body-padding-x: 0rem;
 /* $enable-grid-classes: false; */
 
 @import "../../../node_modules/bootstrap/scss/variables";
@@ -50,10 +68,11 @@ $spacers: map-merge($spacers, $custom-spacers);
 
 @import "../../../node_modules/bootstrap/scss/grid";
 @import "../../../node_modules/bootstrap/scss/utilities";
-@import "../../../node_modules/bootstrap/scss/nav";
-@import "../../../node_modules/bootstrap/scss/card";
-
 @import "../../../node_modules/bootstrap/scss/utilities/api";
+@import "../../../node_modules/bootstrap/scss/nav";
+@import "../../../node_modules/bootstrap/scss/transitions";
+@import "../../../node_modules/bootstrap/scss/accordion";
+
 
 @mixin flex($dir: column, $align: center, $justify: center, $g: 1rem) {
   display: flex;

@@ -19,8 +19,7 @@
       <div class="wrapper d-flex justify-content-between align-items-center">
         <div class="logo">
           <span>
-            <img src="/assets/images/logo-bookmark.svg" 
-            alt="logo bookmark" />
+            <img src="/assets/images/logo-bookmark.svg" alt="logo bookmark" />
           </span>
         </div>
         <div class="menu">
@@ -44,11 +43,10 @@
     </header>
     <main class="d-flex flex-column gap-32">
       <section class="hero container px-0">
-        <div class="wrapper row row-cols-1 gap-8 m-0">
+        <div class="wrapper row row-cols-1 gap-10 m-0">
           <div class="illustration position-relative col">
             <span>
-              <img src="./assets/images/illustration-hero.svg" 
-                alt="illustration" />
+              <img src="./assets/images/illustration-hero.svg" alt="illustration" />
             </span>
             <span class="curved-block end-0"></span>
           </div>
@@ -56,7 +54,7 @@
             <div class="text">
               <h1>A Simple Bookmark Manager</h1>
               <p>
-                A clean and simple interface to organize your favourite websites. 
+                A clean and simple interface to organize your favourite websites.
                 Open a new browser tab and see your sites load instantly. Try it for free.
               </p>
             </div>
@@ -69,98 +67,97 @@
       </section>
       <section class="features container" id="features">
         <!-- <div class="wrapper"> -->
-          <div class="content container row row-cols-1">
-            <div class="text px-8 col">
-              <h2>Features</h2>
-              <p>
-                Our aim is to make it quick and easy for you to access your favourite websites. 
-                Your bookmarks sync between your devices so you can access them on the go.
-              </p>
+        <div class="content container row row-cols-1">
+          <div class="text px-8 col">
+            <h2>Features</h2>
+            <p>
+              Our aim is to make it quick and easy for you to access your favourite websites.
+              Your bookmarks sync between your devices so you can access them on the go.
+            </p>
+          </div>
+          <div class="features-tab row row-cols-1 gap-10 col" role="navigation">
+            <div class="px-8 col">
+              <nav class="nav nav-tabs gap-0 flex-column" id="features-tab">
+                <button class="nav-link active" id="first-tab" data-bs-toggle="tab" data-bs-target="#first" type="button" role="tab" aria-controls="tab 1"
+                                                                                                                                        aria-selected="true">Simple
+                  Bookmarking</button>
+                
+                <button class="nav-link" id="second-tab" data-bs-toggle="tab" data-bs-target="#second" type="button" role="tab" aria-controls="tab 2"
+                                                                                                                                        aria-selected="false">Speedy
+                  Searching</button>
+                
+                <button class="nav-link" id="third-tab" data-bs-toggle="tab" data-bs-target="#third" type="button" role="tab" aria-controls="tab 3"
+                                                                                                                                        aria-selected="false">Easy
+                  Sharing</button>
+              </nav>
             </div>
-            <div class="features-tab row row-cols-1 gap-8 col" role="navigation">
-              <div class="px-8 col">
-                <nav class="nav nav-tabs gap-0 flex-column" id="features-tab">
-                  <button class="nav-link active" id="first-tab" data-bs-toggle="tab" 
-                    data-bs-target="#first" type="button" role="tab" aria-controls="tab 1" 
-                    aria-selected="true">Simple Bookmarking</button>
-                    
-                  <button class="nav-link" id="second-tab" data-bs-toggle="tab" 
-                    data-bs-target="#second" type="button" role="tab" aria-controls="tab 2" 
-                    aria-selected="false">Speedy Searching</button>
-                    
-                  <button class="nav-link" id="third-tab" data-bs-toggle="tab" 
-                    data-bs-target="#third" type="button" role="tab" aria-controls="tab 3" 
-                    aria-selected="false">Easy Sharing</button>
-                </nav>
-              </div>
-              <ul class="tab-content col">
-                <li class="tab-pane active" id="first" role="tabpanel" 
-                  aria-labelledby="first-tab" tabindex="0">
-                  <div class="illustration">
-                    <span>
-                      <img src="/assets/images/illustration-features-tab-1.svg" alt="" />
-                    </span>
-                    <span class="curved-block left start-0 bottom-0"></span>
+            <ul class="tab-content col">
+              <li class="tab-pane active" id="first" role="tabpanel" aria-labelledby="first-tab" tabindex="0">
+                <div class="illustration">
+                  <span>
+                    <img src="/assets/images/illustration-features-tab-1.svg" alt="" />
+                  </span>
+                  <span class="curved-block left start-0 bottom-0"></span>
+                </div>
+                <div class="content">
+                  <div class="text">
+                    <h2>Bookmark in one click</h2>
+                    <p>
+                      Organize your bookmarks however you like. Our simple drag-and-drop interface
+                      gives you complete control over how you manage your favourite sites.
+                    </p>
                   </div>
-                  <div class="content">
-                    <div class="text">
-                      <h2>Bookmark in one click</h2>
-                      <p>
-                        Organize your bookmarks however you like. Our simple drag-and-drop interface 
-                        gives you complete control over how you manage your favourite sites.
-                      </p>
-                    </div>
-                    <a href="#" class="d-none link-btn">More Info</a>
+                  <a href="#" class="d-none link-btn">More Info</a>
+                </div>
+              </li>
+              <li class="tab-pane" id="second" role="tabpanel" aria-labelledby="second-tab" tabindex="0">
+                <div class="illustration">
+                  <span>
+                    <img src="./assets/images/illustration-features-tab-2.svg" alt="" />
+                  </span>
+                  <span class="curved-block left start-0 bottom-0"></span>
+                </div>
+                <div class="content">
+                  <div class="text">
+                    <h2>Intelligent search</h2>
+                    <p>
+                      Our powerful search feature will help you find saved sites in no time at all.
+                      No need to trawl through all of your bookmarks.
+                    </p>
+                    <a href="#" class="d-none">More Info</a>
                   </div>
-                </li>
-                <li class="tab-pane" id="second" role="tabpanel" aria-labelledby="second-tab" tabindex="0">
-                  <div class="illustration">
-                    <span>
-                      <img src="./assets/images/illustration-features-tab-2.svg" alt="" />
-                    </span>
-                    <span class="curved-block left start-0 bottom-0"></span>
+                </div>
+              </li>
+              <li class="tab-pane" id="third" role="tabpanel" aria-labelledby="third-tab" tabindex="0">
+                <div class="illustration">
+                  <span>
+                    <img src="./assets/images/illustration-features-tab-3.svg" alt="" />
+                  </span>
+                  <span class="curved-block left start-0 bottom-0"></span>
+                </div>
+                <div class="content">
+                  <div class="text">
+                    <h2>Share your bookmarks</h2>
+                    <p>
+                      Easily share your bookmarks and collections with others. Create a shareable
+                      link that you can send at the click of a button.
+                    </p>
                   </div>
-                  <div class="content">
-                    <div class="text">
-                      <h2>Intelligent search</h2>
-                      <p>
-                        Our powerful search feature will help you find saved sites in no time at all. 
-                        No need to trawl through all of your bookmarks.
-                      </p>
-                      <a href="#" class="d-none">More Info</a>
-                    </div>
-                  </div>
-                </li>
-                <li class="tab-pane" id="third" role="tabpanel" aria-labelledby="third-tab" tabindex="0">
-                  <div class="illustration">
-                    <span>
-                      <img src="./assets/images/illustration-features-tab-3.svg" alt="" />
-                    </span>
-                    <span class="curved-block left start-0 bottom-0"></span>
-                  </div>
-                  <div class="content">
-                    <div class="text">
-                      <h2>Share your bookmarks</h2>
-                      <p>
-                        Easily share your bookmarks and collections with others. Create a shareable 
-                        link that you can send at the click of a button.
-                      </p>
-                    </div>
-                    <a href="#" style="display: none;">More Info</a>
-                  </div>
-                </li>
-              </ul>
-            </div>
+                  <a href="#" style="display: none;">More Info</a>
+                </div>
+              </li>
+            </ul>
+          </div>
           <!-- </div> -->
         </div>
       </section>
       <section class="extensions px-8">
-        <div class="wrapper d-flex flex-column gap-16">
+        <div class="wrapper d-flex flex-column gap-10">
           <div class="content">
             <div class="text">
               <h2>Download the extension</h2>
               <p>
-                We’ve got more browsers in the pipeline. Please do let us know if you’ve 
+                We’ve got more browsers in the pipeline. Please do let us know if you’ve
                 got a favourite you’d like us to prioritize.
               </p>
             </div>
@@ -170,8 +167,7 @@
               <div class="wrapper">
                 <main>
                   <span>
-                    <img src="./assets/images/logo-chrome.svg" 
-                      alt="chrome browser logo" />
+                    <img src="./assets/images/logo-chrome.svg" alt="chrome browser logo" />
                   </span>
                   <div class="text">
                     <h3>Add to Chrome</h3>
@@ -179,10 +175,9 @@
                   </div>
                 </main>
                 <span>
-                  <img src="./assets/images/bg-dots.svg" 
-                  alt="dots image for page division" />
+                  <img src="./assets/images/bg-dots.svg" alt="dots image for page division" />
                 </span>
-                <span>  
+                <span>
                   <a href="#" class="link-btn">Add & Install Extension</a>
                 </span>
               </div>
@@ -191,8 +186,7 @@
               <div class="wrapper">
                 <main>
                   <span>
-                    <img src="./assets/images/logo-firefox.svg" 
-                    alt="firefox browser logo" />
+                    <img src="./assets/images/logo-firefox.svg" alt="firefox browser logo" />
                   </span>
                   <div class="text">
                     <h3>Add to Firefox</h3>
@@ -200,8 +194,7 @@
                   </div>
                 </main>
                 <span>
-                  <img src="./assets/images/bg-dots.svg" 
-                  alt="dots image for page division" />
+                  <img src="./assets/images/bg-dots.svg" alt="dots image for page division" />
                 </span>
                 <span>
                   <a href="#" class="link-btn">Add & Install Extension</a>
@@ -212,8 +205,7 @@
               <div class="wrapper">
                 <main>
                   <span>
-                    <img src="./assets/images/logo-opera.svg" 
-                    alt="Opera browser logo" />
+                    <img src="./assets/images/logo-opera.svg" alt="Opera browser logo" />
                   </span>
                   <div class="text">
                     <h3>Add to Opera</h3>
@@ -221,8 +213,7 @@
                   </div>
                 </main>
                 <span>
-                  <img src="./assets/images/bg-dots.svg" 
-                  alt="dots image for page division" />
+                  <img src="./assets/images/bg-dots.svg" alt="dots image for page division" />
                 </span>
                 <span>
                   <a href="#" class="link-btn">Add & Install Extension</a>
@@ -232,86 +223,91 @@
           </ul>
         </div>
       </section>
-      <section class="faqs">
-        <div class="wrapper">
-          <section class="content">
-            <h1>Frequently Asked Questions</h1>
-            <p>
-              Here are some of our FAQs. If you have any other questions you’d like 
-              answered please feel free to email us.
-            </p>
-          </section>
-          <ul class="questions">
-            <li>
+      <section class="faqs px-8">
+        <div class="wrapper d-flex flex-column gap-10">
+          <div class="content">
+            <div class="text">
+              <h1>Frequently Asked Questions</h1>
+              <p>
+                Here are some of our FAQs. If you have any other questions you’d like
+                answered please feel free to email us.
+              </p>
+            </div>
+          </div>
+          <ul class="questions accordion accordion-flush" id="faqsAccordion">
+            <li class="accordion-item p-0">
               <div class="wrapper">
-                <div class="question">
-                  <h3>What is Bookmark?</h3>
-                  <span>
-                    <img src="./assets/images/icon-arrow.svg" 
-                    alt="arrow for closing faq" />
-                  </span>
+                <div class="question accordion-header">
+                  <button class="accordion-button collapsed" type="button" data-bs-target="#collapseOne" data-bs-toggle="collapse" aria-expanded="false"
+                                                                                                                                          aria-controls="collapseOne">
+                    <h3>What is Bookmark?</h3>
+                    <!-- <img src="./assets/images/icon-arrow.svg" alt="arrow for closing faq" /> -->
+                  </button>
                 </div>
-                <div class="answer">
-                  <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce tincidunt 
+                <div class="answer accordion-collapse collapse" id="collapseOne">
+                  <p class="accordion-body">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce tincidunt
                     justo eget ultricies fringilla. Phasellus blandit ipsum quis quam ornare mattis.
                   </p>
                 </div>
               </div>
             </li>
-            <li>
+            <li class="accordion-item">
               <div class="wrapper">
-                <div class="question">
-                  <h3>What is Bookmark?</h3>
-                  <span>
-                    <img src="./assets/images/icon-arrow.svg" 
-                    alt="arrow for closing faq" />
-                  </span>
+                <div class="question accordion-header">
+                  <button class="accordion-button collapsed" type="button" data-bs-target="#collapseTwo" data-bs-toggle="collapse" aria-expanded="false"
+                                                                                                                                          aria-controls="collapseTwo">
+                    <h3>How can I request a new browser?</h3>
+                    <!-- <img src="./assets/images/icon-arrow.svg" alt="arrow for closing faq" /> -->
+                  </button>
                 </div>
-                <div class="answer">
-                  <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce tincidunt 
-                    justo eget ultricies fringilla. Phasellus blandit ipsum quis quam ornare mattis.
+                <div class="answer accordion-collapse collapse" id="collapseTwo">
+                  <p class="accordion-body">
+                    Vivamus luctus eros aliquet convallis ultricies. Mauris augue massa, ultricies non ligula. 
+                    Suspendisse imperdiet. Vivamus luctus eros aliquet convallis ultricies. Mauris augue massa, 
+                    ultricies non ligula. Suspendisse imperdie tVivamus luctus eros aliquet convallis ultricies. 
+                    Mauris augue massa, ultricies non ligula. Suspendisse imperdiet.
                   </p>
                 </div>
               </div>
             </li>
-            <li>
+            <li class="accordion-item">
               <div class="wrapper">
-                <div class="question">
-                  <h3>What is Bookmark?</h3>
-                  <span>
-                    <img src="./assets/images/icon-arrow.svg" 
-                    alt="arrow for closing faq" />
-                  </span>
+                <div class="question accordion-header">
+                  <button class="accordion-button collapsed" type="button" data-bs-target="#collapseThree" data-bs-toggle="collapse" aria-expanded="false"
+                                                                                                                                          aria-controls="collapseThree">
+                    <h3>Is there a mobile app?</h3>
+                    <!-- <img src="./assets/images/icon-arrow.svg" alt="arrow for closing faq" /> -->
+                  </button>
                 </div>
-                <div class="answer">
-                  <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce tincidunt 
-                    justo eget ultricies fringilla. Phasellus blandit ipsum quis quam ornare mattis.
+                <div class="answer accordion-collapse collapse" id="collapseThree">
+                  <p class="accordion-body">
+                    Sed consectetur quam id neque fermentum accumsan. Praesent luctus vestibulum dolor, ut condimentum 
+                    urna vulputate eget. Cras in ligula quis est pharetra mattis sit amet pharetra purus. Sed 
+                    sollicitudin ex et ultricies bibendum.
                   </p>
                 </div>
               </div>
             </li>
-            <li>
+            <li class="accordion-item">
               <div class="wrapper">
-                <div class="question">
-                  <h3>What is Bookmark?</h3>
-                  <span>
-                    <img src="./assets/images/icon-arrow.svg" 
-                    alt="arrow for closing faq" />
-                  </span>
+                <div class="question accordion-header">
+                  <button class="accordion-button collapsed" type="button" data-bs-target="#collapseFour" data-bs-toggle="collapse" aria-expanded="false"
+                                                                                                                                          aria-controls="collapseFour">
+                    <h3>What about other Chromium browsers?</h3>
+                    <!-- <img src="./assets/images/icon-arrow.svg" alt="arrow for closing faq" /> -->
+                  </button>
                 </div>
-                <div class="answer">
-                  <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce tincidunt 
-                    justo eget ultricies fringilla. Phasellus blandit ipsum quis quam ornare mattis.
+                <div id="collapseFour" class="answer accordion-collapse collapse">
+                  <p class="accordion-body">
+                    Integer condimentum ipsum id imperdiet finibus. Vivamus in placerat mi, at euismod dui. Aliquam 
+                    vitae neque eget nisl gravida pellentesque non ut velit.
                   </p>
                 </div>
               </div>
             </li>
           </ul>
-          <a href="#">More Info</a>
+          <a href="#" class="link-btn m-auto" style="width: max-content;">More Info</a>
         </div>
       </section>
     </main>
@@ -319,10 +315,10 @@
       <div class="wrapper">
         <div class="content">
           <h4>35,000+ already joined</h4>
-          <p>Stay up-to-date with what we’re doing</p> 
+          <p>Stay up-to-date with what we’re doing</p>
         </div>
         <form action="#" method="get">
-          <input type="text" placeholder="Enter your email address"/>
+          <input type="text" placeholder="Enter your email address" />
           <button type="submit">Contact Us</button>
         </form>
       </div>
@@ -331,8 +327,7 @@
       <div class="wrapper">
         <header>
           <span>
-            <img src="./assets/images/logo-bookmark.svg" 
-            alt="bookmark logo" />
+            <img src="./assets/images/logo-bookmark.svg" alt="bookmark logo" />
           </span>
         </header>
         <ul class="links">
@@ -342,11 +337,11 @@
         </ul>
         <ul class="links-socials">
           <li><a href="#">
-            <img src="./assets/images/icon-facebook.svg" alt="facebook logo" />
-          </a></li>
+              <img src="./assets/images/icon-facebook.svg" alt="facebook logo" />
+            </a></li>
           <li><a href="#">
-            <img src="./assets/images/icon-twitter.svg" alt="twitter logo" />
-          </a></li>
+              <img src="./assets/images/icon-twitter.svg" alt="twitter logo" />
+            </a></li>
         </ul>
       </div>
     </footer>
