@@ -1,0 +1,25 @@
+section.call-to-action {
+  .content {
+    .text {
+      color: $light;
+      line-height: 1.2;
+      
+      & * {
+        width: 100%;
+      }
+    }
+    
+    p {
+      letter-spacing: .25rem;
+      font-size: .75rem;
+      font-weight: 500;
+      font-variant: small-caps;
+    }
+    
+    h4 {
+      padding: 0rem;
+      font-weight: 500;
+      font-size: $h3-font-size;
+    }
+  }
+}
