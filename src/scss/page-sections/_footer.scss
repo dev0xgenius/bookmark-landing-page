@@ -1,0 +1,11 @@
+footer {
+  .links {
+    @include flex;
+    a { color: $secondary; }
+    
+    &.socials {
+      flex-direction: row;
+      gap: 2rem;
+    }
+  }
+}
