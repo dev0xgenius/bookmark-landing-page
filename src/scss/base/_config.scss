@@ -8,6 +8,11 @@ $light: white;
 
 $box-shadow: 0 .5rem 1rem rgba($primary, .15);
 
+$navbar-padding-x: 0rem;
+$navbar-padding-y: 0rem;
+$navbar-toggler-padding-y: 0;
+$navbar-toggler-padding-x: 0;
+
 @import "../page-sections/faqs";
 
 /* $enable-grid-classes: false; */
@@ -55,10 +60,10 @@ $spacers: map-merge($spacers, $custom-spacers);
 @import "../../../node_modules/bootstrap/scss/grid";
 @import "../../../node_modules/bootstrap/scss/utilities";
 @import "../../../node_modules/bootstrap/scss/utilities/api";
-@import "../../../node_modules/bootstrap/scss/nav";
 @import "../../../node_modules/bootstrap/scss/transitions";
+@import "../../../node_modules/bootstrap/scss/nav";
 @import "../../../node_modules/bootstrap/scss/accordion";
-
+@import "../../../node_modules/bootstrap/scss/navbar";
 
 @mixin flex($dir: column, $align: center, $justify: center, $g: 1rem) {
   display: flex;

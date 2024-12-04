@@ -1,3 +1,42 @@
-/* header.main {
-  
-} */
+header.main {
+  .menu {
+    #mainNav {
+      .wrapper {
+        @include flex($g: 4rem);
+        width: 100%;
+        
+        a { 
+          width: 100%;
+          padding: 1rem;
+          color: $light;
+          text-align: center;
+          letter-spacing: .25rem;
+          text-transform: uppercase; 
+        }
+        
+        main {
+          width: 100%;
+          border: 1px solid $secondary;
+          border-width: 1px 0px 1px 0px;
+          
+          a:nth-child(2) {
+            border: 1px solid $secondary;
+            border-width: 1px 0px 1px 0px;
+          }
+        }
+      } 
+      
+      max-width: 375px;
+      width: 100%;
+      margin: 0 auto;
+      
+      position: fixed;
+      min-height: 100vh;
+      padding: 2rem;
+      top: 0; right: 0;
+      bottom: 0; left: 0;
+      background-color: rgba($dark, .95);
+      z-index: 10;
+    }
+  }
+}

@@ -15,7 +15,7 @@ body {
 main>section {
   /* padding: 0 2rem; */
   
-  &>.wrapper {
+  & .wrapper {
     width: 100%;
   }
 }
@@ -73,6 +73,8 @@ main>section {
   box-shadow: $box-shadow;
 }
 
+
+@import "page-sections/header";
 @import "page-sections/features";
 @import "page-sections/extensions";
 @import "page-sections/cta";
