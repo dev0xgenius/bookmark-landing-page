@@ -1,7 +1,10 @@
 footer {
   .links {
     @include flex;
-    a { color: $secondary; }
+    a { 
+      color: $secondary; 
+      letter-spacing: .125rem;
+    }
     
     &.socials {
       flex-direction: row;
