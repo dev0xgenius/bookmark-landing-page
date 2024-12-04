@@ -47,15 +47,16 @@ section.call-to-action {
         background-position: calc(100% - 1rem) 50%;
         background-repeat: no-repeat;
       }
+      
+      .error-msg {
+        display: inline-block;
+        padding: .125rem .5rem;
+        color: $light;
+        font-weight: 500;
+        font-size: .75rem;
+        font-style: italic;
+      }
     }
     
-    .error-msg {
-      display: inline-block;
-      padding: .125rem .5rem;
-      color: $light;
-      font-weight: 500;
-      font-size: .75rem;
-      font-style: italic;
-    }
   }
 }

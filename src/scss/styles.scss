@@ -54,6 +54,7 @@ main>section {
   
   &.left {
     border-radius: 0;
+    border-top-right-radius: 10rem;
     border-bottom-right-radius: 5rem;
   }
 }
