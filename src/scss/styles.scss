@@ -7,7 +7,7 @@ body {
   line-height: $line-height-base;
   
   &>.wrapper {
-    max-width: 375px;
+    max-width: $test-breakpoint;
     font-family: Rubik;
   }
 }

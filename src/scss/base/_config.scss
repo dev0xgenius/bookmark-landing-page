@@ -13,6 +13,7 @@ $navbar-padding-y: 0rem;
 $navbar-toggler-padding-y: 0;
 $navbar-toggler-padding-x: 0;
 
+
 @import "../page-sections/faqs";
 
 /* $enable-grid-classes: false; */
@@ -102,3 +103,5 @@ img {
     margin: 0;
   }
 }
+
+$test-breakpoint: calc(map-get($grid-breakpoints, "sm") + 1px);
