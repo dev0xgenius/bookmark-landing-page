@@ -60,6 +60,15 @@ $spacers: map-merge($spacers, $custom-spacers);
 
 @import "../../../node_modules/bootstrap/scss/grid";
 @import "../../../node_modules/bootstrap/scss/utilities";
+
+$utilities: map-merge(
+  $utilities,
+  (
+    "background-color" : map-merge(
+      map-get($utilities, "background-color"), ( responsive: true ))
+  )
+);
+
 @import "../../../node_modules/bootstrap/scss/utilities/api";
 @import "../../../node_modules/bootstrap/scss/transitions";
 @import "../../../node_modules/bootstrap/scss/nav";
