@@ -20,6 +20,8 @@ main>section {
   }
 }
 
+
+
 .content {
   @include flex($g: 2rem);
   
@@ -76,6 +78,20 @@ main>section {
 
 
 @import "page-sections/header";
+
+$h1-font-size: $font-size-base * 2;
+section.hero {
+  @each $key, $value in $grid-breakpoints {
+    $h1-font-size: calc($h1-font-size + $h1-font-size * 0.005);
+    
+    @include media-breakpoint-up($key) {
+      .content h1 {
+        font-size: $h1-font-size;
+      }
+    }
+  }
+}
+
 @import "page-sections/features";
 @import "page-sections/extensions";
 @import "page-sections/cta";

@@ -111,4 +111,4 @@ img {
   }
 }
 
-$test-breakpoint: calc(map-get($grid-breakpoints, "md") + 1px);
+$test-breakpoint: calc(map-get($grid-breakpoints, "lg") + 1px);
