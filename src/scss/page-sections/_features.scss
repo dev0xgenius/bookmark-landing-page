@@ -1,26 +1,30 @@
 section.features {
   nav {
-    max-width: $container-max;
-    
+
     text-align: center;
     border-style: solid;
     border-color: $secondary;
     border-width: 1px 0px 1px 0;
     
     @include media-breakpoint-up("md") {
+      gap: 1rem;
       border-width: 0px 0px 1px 0px;
     }
     
     button {
       position: relative;
-      padding: 1rem;
-      padding-bottom: 0.75rem;
+      padding: 1.125rem;
+      @include media-breakpoint-up("md") {
+        padding: 2rem;
+        padding-bottom: 1rem;
+      }
+      
       color: $secondary;
       border: none;
       border-radius: 0px;
       
       &.active {
-        color: $dark; 
+        color: $dark;
         font-weight: 500;
         border-radius: 0px;
         z-index: -1;
@@ -28,13 +32,18 @@ section.features {
       }
       
       &.active::after {
+        @include media-breakpoint-up("md") {
+          width: 100%;
+        }
+         
         position: absolute;
         content: "";
         width: 40%;
         height: auto;
         margin: 0 auto;
         padding: .125rem;
-        bottom: 0; left: 0;
+        bottom: 0;
+        left: 0;
         right: 0;
         border-radius: .25rem;
         background-color: $danger;
@@ -63,13 +72,36 @@ section.features {
   
   .tab-content {
     .tab-pane {
+      .link-btn {
+        display: none;
+      }
+      
       &.active {
         @include flex($g: 2rem);
+        
+        @include media-breakpoint-up("md") {
+          flex-direction: row;
+          gap: 0;
+          
+          .content {
+            align-items: flex-start;
+
+            .text {
+              align-items: flex-start;
+              text-align: left; 
+            }
+            
+            .link-btn {
+              display: inline-block;
+            }
+          }
+        }
       }
       
       .illustration {
         position: relative;
         padding: 2rem;
+        
       }
       
       .content {
@@ -80,6 +112,6 @@ section.features {
   }
   
   .text {
-    max-width: 35rem;
+    max-width: $container-max;
   }
 }
