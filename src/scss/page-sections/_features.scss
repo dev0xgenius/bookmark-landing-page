@@ -1,9 +1,15 @@
 section.features {
   nav {
+    max-width: $container-max;
+    
     text-align: center;
     border-style: solid;
     border-color: $secondary;
     border-width: 1px 0px 1px 0;
+    
+    @include media-breakpoint-up("md") {
+      border-width: 0px 0px 1px 0px;
+    }
     
     button {
       position: relative;
@@ -36,12 +42,21 @@ section.features {
     }
     
     button:nth-child(2) {
+      @include media-breakpoint-up("md") {
+        border: none;
+      }
+      
       border: 1px solid $secondary;
+      border-radius: none;
       border-width: 1px 0px 1px 0;
       
       &.active {
         border: 1px solid $secondary;
         border-width: 1px 0px 1px 0;
+        
+        @include media-breakpoint-up("md") {
+          border: none;
+        }
       }
     }
   }
@@ -62,5 +77,9 @@ section.features {
       }
       
     }
+  }
+  
+  .text {
+    max-width: 35rem;
   }
 }
