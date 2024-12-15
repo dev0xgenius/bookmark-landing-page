@@ -97,10 +97,6 @@ img {
   height: auto;
 }
 
-/* a {
-  color: $light;
-} */
-
 .row {
   padding: 0;
   margin: 0;
@@ -112,4 +108,4 @@ img {
 }
 
 $container-max: 35rem;
-$test-breakpoint: calc(map-get($grid-breakpoints, "md") + 1px);
+$test-breakpoint: calc(map-get($grid-breakpoints, "xxl") + 1px);

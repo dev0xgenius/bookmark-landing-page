@@ -13,7 +13,9 @@ body {
 }
 
 main>section {
-  /* padding: 0 2rem; */
+  .content .text {
+    max-width: $container-max;
+  }
   
   & .wrapper {
     width: 100%;
