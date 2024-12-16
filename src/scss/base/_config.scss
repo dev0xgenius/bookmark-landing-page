@@ -13,7 +13,7 @@ $navbar-padding-y: 0rem;
 $navbar-toggler-padding-y: 0;
 $navbar-toggler-padding-x: 0;
 
-
+$container-max: 35rem;
 @import "../page-sections/faqs";
 
 /* $enable-grid-classes: false; */
@@ -107,5 +107,4 @@ img {
   }
 }
 
-$container-max: 35rem;
-$test-breakpoint: calc(map-get($grid-breakpoints, "xxl") + 1px);
+$test-breakpoint: breakpoint-min("md");//calc(map-get($grid-breakpoints, "md") + 1px);

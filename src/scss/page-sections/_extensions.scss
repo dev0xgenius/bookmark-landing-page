@@ -1,15 +1,11 @@
 section.extensions {
   .extension-card {
-    max-width: 100%;
+    max-width: max-content;
     padding: 3rem 0;
     padding-bottom: 1.5rem;
     box-shadow: $box-shadow;
     border-radius: $border-radius-xl;
     background-color: $light;
-    
-    @include media-breakpoint-up("md") {
-      width: max-content;
-    }
     
     @include media-breakpoint-up("lg") {
       &:nth-child(2) {

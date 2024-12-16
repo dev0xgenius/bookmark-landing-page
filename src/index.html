@@ -62,7 +62,7 @@
         </div>
       </div>
     </header>
-    <main class="d-flex flex-column gap-32 my-16 mb-32">
+    <main class="d-flex flex-column align-items-center gap-32 my-16 mb-32">
       <section class="hero container px-0">
         <div class="wrapper row flex-column gap-10 gap-md-0 m-0 flex-md-row-reverse">
           <div class="illustration position-relative col col-md-6">
@@ -333,14 +333,14 @@
       </section>
     </main>
     <section class="call-to-action py-16 bg-primary" id="contact">
-      <div class="content">
-        <div class="text">
+      <div class="content px-8 px-md-16 gap- g">
+        <div class="text d-flex flex-column gap-4">
           <p>35,000+ already joined</p>
-          <h4>Stay up-to-date with what we’re doing</h4>
+          <h4 class="px-md-4">Stay up-to-date with what we’re doing</h4>
         </div>
-        <form action="#" method="get" class="row row-cols-1 gap-4 px-8" autocomplete id="ctaForm">
-          <label class="w-100 d-flex flex-column gap-2">
-            <input class="col p-4 bg-light rounded-1 border-0" type="text" placeholder="Enter your email address"
+        <form action="#" method="get" class="w-100 row row-cols-1 row-cols-md-2 gap-4 gap-md-2" autocomplete id="ctaForm">
+          <label class="d-flex flex-column gap-2 col flex-grow-1">
+            <input class="p-4 bg-light rounded-1 border-0" type="text" placeholder="Enter your email address"
                                                                                                                                     name="email" />
             <span class="error-msg">Whoops! make sure it's an email</span>
           </label>

@@ -1,5 +1,9 @@
 section.call-to-action {
+  @include flex;
+  
   .content {
+    max-width: $container-max;
+    
     .text {
       color: $light;
       line-height: 1.2;
@@ -24,6 +28,8 @@ section.call-to-action {
   }
   
   form {
+    @include flex($dir: row);
+    
     label {
       input {
         outline: none;
@@ -34,6 +40,12 @@ section.call-to-action {
       }
     } 
     
+    button {
+      width: 100%;
+      @include media-breakpoint-up("md") {
+        max-width: max-content;
+      }
+    }
     
     .error {
       padding: .125rem;
@@ -57,6 +69,5 @@ section.call-to-action {
         font-style: italic;
       }
     }
-    
   }
 }
