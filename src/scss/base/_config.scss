@@ -107,4 +107,4 @@ img {
   }
 }
 
-$test-breakpoint: breakpoint-min("md");//calc(map-get($grid-breakpoints, "md") + 1px);
+$test-breakpoint: 100%;//calc(map-get($grid-breakpoints, "md") + 1px);

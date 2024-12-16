@@ -75,6 +75,16 @@ section.features {
         display: none;
       }
       
+      .illustration {
+        @include media-breakpoint-down("md") {
+          width: 100%;
+        }
+        
+        position: relative;
+        padding: 2rem;
+        flex-grow: 1;
+      }
+      
       &.active {
         @include flex($g: 2rem);
         
@@ -95,12 +105,6 @@ section.features {
             }
           }
         }
-      }
-      
-      .illustration {
-        position: relative;
-        padding: 2rem;
-        
       }
       
       .content {
