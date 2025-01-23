@@ -8,6 +8,12 @@ $light: white;
 
 $box-shadow: 0 .5rem 1rem rgba($primary, .15);
 
+$navbar-padding-x: 0rem;
+$navbar-padding-y: 0rem;
+$navbar-toggler-padding-y: 0;
+$navbar-toggler-padding-x: 0;
+
+$container-max: 35rem;
 @import "../page-sections/faqs";
 
 /* $enable-grid-classes: false; */
@@ -54,11 +60,18 @@ $spacers: map-merge($spacers, $custom-spacers);
 
 @import "../../../node_modules/bootstrap/scss/grid";
 @import "../../../node_modules/bootstrap/scss/utilities";
-@import "../../../node_modules/bootstrap/scss/utilities/api";
-@import "../../../node_modules/bootstrap/scss/nav";
-@import "../../../node_modules/bootstrap/scss/transitions";
-@import "../../../node_modules/bootstrap/scss/accordion";
 
+$utilities: map-merge($utilities,
+    ("background-color" : map-merge(map-get($utilities, "background-color"), (responsive: true)),
+      "border" : map-merge(map-get($utilities, "border"), (responsive: true)),
+      "rounded" : map-merge(map-get($utilities, "rounded"), (responsive: true)),
+    ));
+
+@import "../../../node_modules/bootstrap/scss/utilities/api";
+@import "../../../node_modules/bootstrap/scss/transitions";
+@import "../../../node_modules/bootstrap/scss/nav";
+@import "../../../node_modules/bootstrap/scss/accordion";
+@import "../../../node_modules/bootstrap/scss/navbar";
 
 @mixin flex($dir: column, $align: center, $justify: center, $g: 1rem) {
   display: flex;
@@ -84,10 +97,6 @@ img {
   height: auto;
 }
 
-/* a {
-  color: $light;
-} */
-
 .row {
   padding: 0;
   margin: 0;
@@ -97,3 +106,5 @@ img {
     margin: 0;
   }
 }
+
+$test-breakpoint: 100%;//calc(map-get($grid-breakpoints, "md") + 1px);

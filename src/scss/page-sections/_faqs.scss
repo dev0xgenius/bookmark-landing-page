@@ -18,6 +18,10 @@ $accordion-button-active-icon: url('data:image/svg+xml,<svg xmlns="http://www.w3
 $accordion-body-padding-x: 0rem;
 
 section.faqs {
+  /* &>.wrapper { */
+    max-width: $container-max;
+  
+  
   .accordion .question {
     h3 {
       font-weight: 500;

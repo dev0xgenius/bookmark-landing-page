@@ -1,5 +1,9 @@
 section.call-to-action {
+  @include flex;
+  
   .content {
+    max-width: $container-max;
+    
     .text {
       color: $light;
       line-height: 1.2;
@@ -20,6 +24,50 @@ section.call-to-action {
       padding: 0rem;
       font-weight: 500;
       font-size: $h3-font-size;
+    }
+  }
+  
+  form {
+    @include flex($dir: row);
+    
+    label {
+      input {
+        outline: none;
+      }
+      
+      .error-msg {
+        display: none;
+      }
+    } 
+    
+    button {
+      width: 100%;
+      @include media-breakpoint-up("md") {
+        max-width: max-content;
+      }
+    }
+    
+    .error {
+      padding: .125rem;
+      border-radius: .5rem;
+      background-color: $danger;
+      
+      input {
+        background-image: url('/assets/images/icon-error.svg');
+        background-color: $light;
+        background-size: 1.5rem;
+        background-position: calc(100% - 1rem) 50%;
+        background-repeat: no-repeat;
+      }
+      
+      .error-msg {
+        display: inline-block;
+        padding: .125rem .5rem;
+        color: $light;
+        font-weight: 500;
+        font-size: .75rem;
+        font-style: italic;
+      }
     }
   }
 }

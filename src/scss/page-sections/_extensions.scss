@@ -1,10 +1,23 @@
 section.extensions {
   .extension-card {
+    max-width: max-content;
+    max-height: max-content;
     padding: 3rem 0;
     padding-bottom: 1.5rem;
     box-shadow: $box-shadow;
     border-radius: $border-radius-xl;
     background-color: $light;
+    
+    @include media-breakpoint-up("lg") {
+      &:nth-child(2) {
+        margin-top: 2.5rem;
+      } 
+      
+      &:last-child {
+        margin-top: 5rem;
+      }
+    }
+    
     
     &>.wrapper {
       @include flex;
