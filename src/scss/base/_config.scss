@@ -16,40 +16,24 @@ $navbar-toggler-padding-x: 0;
 $container-max: 35rem;
 @import "../page-sections/faqs";
 
-/* $enable-grid-classes: false; */
-
 @import "../../../node_modules/bootstrap/scss/variables";
 @import "../../../node_modules/bootstrap/scss/variables-dark";
 
-$range: (
-  0,
-  1,
-  2,
-  3,
-  4,
-  5,
-  6,
-  7,
-  8,
-  9,
-  10,
-  12,
-  14,
-  16,
-  18,
-  20,
-  24,
-  28,
-  32
-);
-$custom-spacers: (
-);
-$space-diff: .25;
+$custom-spacers: ();
+$custom-font-sizes: ();
+$space-difference: .25;
 
-
-@each $num in $range {
-  $custom-spacers: map-merge($custom-spacers,
-    (#{$num}: $spacer * ($num * $space-diff)));
+$i: 0;
+@while $i < 32 {
+  @if $i >= 10 and $i < 20 { $i: $i + 2 }
+  @else if $i >= 20 { $i: $i + 4 }
+  @else { $i: $i + 1 }
+  
+  $custom-spacers: 
+    map-merge(
+      $custom-spacers,
+      (#{$i}: $spacer * ($i * $space-difference))
+    );
 }
 
 $spacers: map-merge($spacers, $custom-spacers);
@@ -62,16 +46,23 @@ $spacers: map-merge($spacers, $custom-spacers);
 @import "../../../node_modules/bootstrap/scss/utilities";
 
 $utilities: map-merge($utilities,
-    ("background-color" : map-merge(map-get($utilities, "background-color"), (responsive: true)),
+    (
+      "background-color" : map-merge(map-get($utilities, "background-color"), (responsive: true)),
       "border" : map-merge(map-get($utilities, "border"), (responsive: true)),
       "rounded" : map-merge(map-get($utilities, "rounded"), (responsive: true)),
-    ));
+      "font-size" : map-merge(map-get($utilities, "font-size"), (
+        values: map-merge($custom-spacers, (0: 1)),
+        responsive: true)
+      )
+    )
+);
 
-@import "../../../node_modules/bootstrap/scss/utilities/api";
 @import "../../../node_modules/bootstrap/scss/transitions";
 @import "../../../node_modules/bootstrap/scss/nav";
 @import "../../../node_modules/bootstrap/scss/accordion";
 @import "../../../node_modules/bootstrap/scss/navbar";
+
+@import "../../../node_modules/bootstrap/scss/utilities/api";
 
 @mixin flex($dir: column, $align: center, $justify: center, $g: 1rem) {
   display: flex;
