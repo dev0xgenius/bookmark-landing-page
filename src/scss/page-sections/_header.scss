@@ -10,6 +10,18 @@ header.main {
     
     @media (max-width: map-get($grid-breakpoints, "md")) { 
       #mainNav {
+        max-width: $test-breakpoint;
+        width: 100%;
+        margin: 0 auto;
+        
+        position: fixed;
+        height: 100vh;
+        padding: 2rem;
+        top: 0; right: 0;
+        bottom: 0; left: 0;
+        z-index: 10;
+        background-color: rgba($dark, .95);
+        
         .wrapper {
           @include flex($g: 4rem);
           width: 100%;
@@ -34,17 +46,6 @@ header.main {
           }
         } 
         
-        max-width: $test-breakpoint;
-        width: 100%;
-        margin: 0 auto;
-        
-        position: fixed;
-        height: 100vh;
-        padding: 2rem;
-        top: 0; right: 0;
-        bottom: 0; left: 0;
-        z-index: 10;
-        background-color: rgba($dark, .95);
       }
     }
   }
